@@ -1,0 +1,178 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print{@page {size: landscape}}
+
+
+h3 {
+  font-size: 80%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(19, 1fr) fit-content(100%);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.photo {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+
+.profile {
+  grid-column: 1 / 4;
+  grid-row: 4 / 9;
+  text-align: center;
+  background-image: linear-gradient(white, lightgray);
+}
+
+.personality {
+  grid-column: 4 / 8;
+  grid-row: 1 / 4;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: teal;
+  font-size: 115%;
+}
+
+.biography {
+  grid-column: 8 / 17;
+  grid-row: 1 / 4;
+  margin-left: 5%;
+  padding-right: 3.5%;
+  font-size: 110%;
+}
+
+.motivations {
+  grid-column: 4 / 17;
+  grid-row: 4 / 5;
+  border-top: solid;
+  border-top-width: thin;
+  border-top-color: teal;
+  border-bottom: solid;
+  border-bottom-width: thin;
+  border-bottom-color: teal;
+}
+
+.goals {
+  grid-column: 4 / 10;
+  grid-row: 5 / 10;
+  padding-right: 5%;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color: teal;
+  font-size: 115%;
+}
+
+.frustrations {
+  grid-column: 10 / 17;
+  grid-row: 5 / 10;
+  margin-left: 5%;
+  padding-right: 3.5%;
+  font-size: 110%;
+}
+
+.quote {
+  grid-column: 17 / 20;
+  grid-row: 1;
+  background-color: teal;
+  color: azure;
+}
+
+.behaviour {
+  grid-column: 17 / 20;
+  grid-row: 2 / 4;
+  background-color: azure;
+  color: teal;
+}
+
+.education {
+  grid-column: 17 / 20;
+  grid-row: 4 / 5;
+  background-color: azure;
+  color: teal;
+}
+
+.influences {
+  grid-column: 17 / 20;
+  grid-row: 5 / 6;
+  background-color: azure;
+  color: teal;
+}
+
+.preferred-channels {
+  grid-column: 17 / 20;
+  grid-row: 6 / 7;
+  background-color: azure;
+  color: teal;
+}
+
+.one-column {
+  font-size: 75%;
+  columns: 1;
+}
+
+.two-columns {
+  font-size: 80%;
+  columns: 2;
+}
+
+.avatar {
+  width: 100%;
+}
+
+blockquote {
+  border:none;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  margin-bottom:-30px;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-left: 0.4em;
+  text-indent: 2.5em;
+  font-size: 120%;
+}
+
+blockquote h3 {
+  font-size: 98%;
+}
+
+blockquote h3:before {
+  content: "\201C";
+  font-weight: bold;
+  font-size: 350%;
+  color: lightgray;
+  position: absolute;
+  top: -0.3em;
+  left: -0.5em;
+  font-family: 'Georgia';
+}
+
+blockquote h3:after {
+  content: "\201D";
+  font-weight: bold;
+  font-size: 350%;
+  color:lightgray;
+  position: absolute;
+  /* bottom: -0.9em; */
+  right: 0.1em;
+  font-family: 'Georgia';
+}
+
+.progress-bar {
+  width: 100%;
+}
+
+.icon {
+  float: left;
+  width: 4%;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.section-header {
+  color: teal;
+  font-weight: 100;
+}
